@@ -1,48 +1,40 @@
-body{
 
-background-color: rgb(21, 105, 105);
-}
 @keyframes animacion{
-         0%   {
-                  transform: rotate(360deg);
-                 
-                   left: 0px;
-                background-image: url("web01.jpg");
+0%   {
+        transform: rotate(360deg);
+        left: 0px;
+        background-image: url("web01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-         }
-         25%  {
-                  transform: rotate(360deg);
-
-      left:500px;
-      background-image: url("web.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;}
-
-         50%  { 
-                  transform: rotate(360deg);
-
-         left:600px; 
-         background-image: url("web01.jpg");
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: contain;
-transform-origin: center;
 }
-
-         75%  {left: 700px; 
-                  transform: rotate(360deg);
-
-                  background-image: url("web.jpg");
+25%  {
+        transform: rotate(360deg);
+        left:500px;
+        background-image: url("web.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;}
-         100% { left: 0px; 
-                  transform: rotate(360deg);
-
-                  background-image: url("web01.jpg");
+        background-size: contain;
+}
+50%  { 
+        transform: rotate(360deg);
+        left:600px; 
+        background-image: url("web01.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform-origin: center;
+}
+75%  {left: 700px; 
+        transform: rotate(360deg);
+        background-image: url("web.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+100% { left: 0px; 
+        transform: rotate(360deg);
+        background-image: url("web01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -51,91 +43,199 @@ transform-origin: center;
 
 
 header{
-display: flex;
-flex-direction:row;
-flex-wrap: nowrap;
-width: 100%;
-height:200px;
-background-color: rgb(143, 139, 139);
-margin: 0;
-justify-content: center;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        width: 100%;
+        height:200px;
+        background-image: url("web01.jpg");
+        background-color: rgb(143, 139, 139);
+        margin: 0;
+        justify-content: center;
+        opacity: 0.6;
+        z-index: -1;
 }
 
 #logo{
- align-self:center;  
-margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-self:center;  
+        margin: 0;
+        z-index: 1;
+}
+
+#logo img{
+        width:200px;
+        height:200px;
+        margin: 0px;
+        text-rendering: optimizeLegibility;
+        border-radius: 100%;
 }
 
 
-#logo img{
-width:200px;
-height:200px;
-margin: 0px;
-text-rendering: optimizeLegibility;
-border-radius: 100%;
-background-color:#ccc;
+#navegar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 50px;
+        background-color: #ccc;
+        justify-content: center;
+}
+
+#navegar nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
 }
 
 #navegar nav ul{
-display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
-justify-content: space-between;
-width:97%;
-height:50px;
-background-color: #ccc;
-margin-top: 0px;
-align-content: center;
-flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        width: 100%;
+        justify-content: space-around;
 }
+
 #navegar nav ul li{
-align-self: center;
-list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        list-style: none;
+}
+
+.boton{
+        transition: ease-in-out 1s;
+        width: 150px;
+        height:40px;
+        background-color: rgb(143, 139, 139);
+        font: bold 15px  verdana;
+        z-index: 25;
+        border-radius: 10px;
+}
+
+.boton:hover{
+        background-color:aquamarine;
+        cursor: pointer;
+}
+.buscar{
+        margin-right: 2px;
+        border-radius: 10px;
+        font-family: fantasy;
+        text-align: center;
 }
 #titulo{
         display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: center;
         width:100%;
         height:50px;
         background-color: rgb(143, 139, 139);
-justify-content: center;
         margin-top: 0px;
-     }
+}
+
+#titulo h1{
+        align-self: center;
+        font: bold 25px verdana;
+        color: #ccc;
+        z-index: 15;
+}
+
 #box_presentacion {
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 }
-
 #box_presentacion #presentacion{
-          display: flex;
+        display: flex;
         flex-direction:row;
-width: 100%;
-height:500px;
-justify-content: center; 
-flex-wrap: wrap;
-background-color: #ccc ;}
+        flex-wrap: nowrap;
+        justify-content: center; 
+        width: 100%;
+        height:500px;
+        background-color: aquamarine;
+
+        align-self: center;
+        z-index: -1;
+}
+
+
 #presentacion #imagenes{
-         
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         flex-wrap: wrap;
-background-image: url('web.jpg');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-width:80%;
-height: 500px;
-animation: animacion 0.5s  infinite;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        background-image: url('web.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:100%;
+        height: 500px;
+        z-index:-1;
+        position: absolute;
+        animation: animacion 3s  infinite;
 }
-#presentacion #imagenes div{
-align-self: center;
-zoom:2;
-z-index:1;
-font-family:Arial, Helvetica, sans-serif;
+#presentacion #imagenes p{
+        align-self: center;
+        zoom:1.5;
+       
+        font-family:Arial, Helvetica, sans-serif;
+}
+section  footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 75px;
+        justify-content: center;
+        background-color: #ccc;
+}
+section  footer nav{
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+}
+
+section  footer nav ul{
+
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+}
+section  footer nav ul li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-self: center;
+        justify-self: center;
+        list-style: none;
+        width:200px;
+        height: 40px;
 
 }
-
+section  footer nav ul li img{
+        transition: ease-in-out 1s;
+        width:60px;
+        height:40px;
+        background-color: rgb(143, 139, 139);
+        font: bold 15px  verdana;
+        z-index: 25;
+        border-radius: 10px;
+}
+section  footer nav ul li :hover{
+        background-color:aquamarine;
+        cursor: pointer;
+}
