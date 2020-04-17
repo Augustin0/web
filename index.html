@@ -14,7 +14,10 @@
 <body>
 <section>
 <header>
- 
+  <div id="logo2">
+    <img src="Imagenes\logo\Web_Developer_logo.svg"  alt="logo web_developer" >
+    
+           </div>
 <div id="logo">
 <img src="Imagenes\logo\Web_Developer_logo.svg"  alt="logo web_developer" >
 
@@ -24,10 +27,10 @@
 <div id="navegar">
 <nav>
 <ul>
-<li><input type="button" class="boton" value="Inicio"></li>
-<li><input type="button"  class="boton" value="Developers"></li>
+<li><a href="./index.html"><input type="button" class="boton" value="Inicio"></a></li>
+<li><a href="./views/formularioDeveloper.html"> <input type="button"  class="boton" value="Developers"></a></li>
 <li><input type="button" class="boton" value="Clientes"></li>
-<li><input type="search" class="buscar"value="Registro"><input type="button" class="boton" value="Buscar"></li>
+<li id="busqueda"><input type="search" class="buscar"value="Registro"><input type="button" class="boton" id="busqueda" value="Buscar"></li>
 </ul>
 </nav>
 </div>
@@ -67,15 +70,24 @@
 <footer>
 <nav>
 <ul>
-<li><img src="./Imagenes/logo/boton 1.jpg" alt="imagen youtoube"></li>
-<li><img src="./Imagenes/logo/boton f.jpg" alt="imagen facebook"></li>
+<li><img src="./Imagenes/logo/boton 1.jpg" alt="imagen youtoube" usemap="#youtoube"></li>
+<li><img src="./Imagenes/logo/boton f.jpg" alt="imagen facebook" usemap="#facebook"></li>
  <li><img src="./Imagenes/logo/twit1.jpg" alt="imagen twiter" usemap="#twit"></li>
-<map name="twit">
-  </map>
-</ul></nav>
 
-         </footer>
+</ul>
+</nav>
+
+</footer>
 </section>
 
 </body>
+<map name="twit">
+  <area shape="default"  href="https://twitter.com/skenhee" alt="mi cuenta twiter">
+  </map>
+  <map name="youtoube">
+    <area shape="default"  href="https://www.youtube.com/channel/UC8-s-QFC9dE5iszU-iO1pGg?" alt="mi cuenta youtoube">
+    </map>
+    <map name="facebook">
+      <area shape="default"  href="https://web.facebook.com/skenshee.augustin.14" alt="Mi cuenta de facebook">
+    </map>
 </html>

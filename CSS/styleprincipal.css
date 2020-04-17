@@ -1,4 +1,65 @@
+@keyframes busqueda{
+        0%{
+               right: 5px;
+        }
+        25%{
+                right: 10px;
+        }
+        50%{
+                right: 15px;
+            
+        }
+        75%{
+                right: 20px;
 
+        }
+        100%{
+                right: 25px;
+        }
+}
+
+@keyframes logo{
+0%{
+      
+        left:100px;
+}
+25%{
+        transform: rotate(180deg);
+        left:400px;
+
+}
+75%{
+        transform: rotate(270deg);
+        left:500px;
+
+}
+100%{
+        transform: rotate(360deg);
+        left:800px;
+
+}
+}
+@keyframes logo2{
+        0%{
+              
+                right:100px;
+        }
+        25%{
+                transform: rotate(180deg);
+                right:400px;
+        
+        }
+        75%{
+                transform: rotate(270deg);
+                right:500px;
+        
+        }
+        100%{
+                transform: rotate(360deg);
+                right:800px;
+        
+        }
+        }
 @keyframes animacion{
 0%   {
     
@@ -61,28 +122,58 @@ header{
         background-image: url("web01.jpg");
         background-color: rgb(143, 139, 139);
         margin: 0;
-        justify-content: center;
+        
         opacity: 0.6;
         z-index: -1;
+        position: relative;
+        justify-content: space-between;
+
 }
 
 #logo{
+        
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-self:center;  
         margin: 0;
-        z-index: 1;
+      
 }
 
 #logo img{
+        position: absolute;
+        align-self: center;
         width:200px;
         height:200px;
-        margin: 0px;
         text-rendering: optimizeLegibility;
         border-radius: 100%;
+        animation: logo 2s infinite;
+        z-index: 1;
+
+}
+#logo2{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-self: center;  
+        margin: 0;
+        justify-self: flex-end;
+
+      
 }
 
+#logo2 img{
+        position: absolute;
+
+        justify-self: center;
+        align-self: center;
+        width:200px;
+        height:200px;
+        border-radius: 100%;
+        animation: logo2 2s infinite;
+        z-index: 1;
+
+}
 
 #navegar{
         display: flex;
@@ -138,6 +229,17 @@ header{
         border-radius: 10px;
         font-family: fantasy;
         text-align: center;
+        opacity: 0.6;
+}
+li#busqueda{
+        position: relative;
+}
+#busqueda{
+position: absolute;
+}
+#busqueda:active{
+        animation: busqueda 2s  initial;
+        position: sticky;
 }
 #titulo{
         display: flex;
