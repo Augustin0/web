@@ -146,8 +146,8 @@ header{
         height:200px;
         text-rendering: optimizeLegibility;
         border-radius: 100%;
-        animation: logo 2s infinite;
-        z-index: 1;
+        animation: logo 6s infinite;
+        z-index: 2;
 
 }
 #logo2{
@@ -170,8 +170,8 @@ header{
         width:200px;
         height:200px;
         border-radius: 100%;
-        animation: logo2 2s infinite;
-        z-index: 1;
+        animation: logo2 6s infinite;
+        z-index: 2;
 
 }
 
@@ -291,7 +291,7 @@ position: absolute;
         height: 500px;
         z-index:-1;
         position: absolute;
-        animation: animacion2 5s  infinite;
+        animation: animacion2 10s  infinite ease;
 }
 #presentacion #imagenes{
         align-self: center;
@@ -307,7 +307,7 @@ position: absolute;
         height: 500px;
         z-index:-1;
         position: absolute;
-        animation: animacion 5s  infinite;
+        animation: animacion 10s  infinite ease;
 }
 #presentacion #imagenes2{
         align-self: center;
