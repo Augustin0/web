@@ -238,8 +238,7 @@ li#busqueda{
 position: absolute;
 }
 #busqueda:active{
-        animation: busqueda 2s  initial;
-        position: sticky;
+       float:right;
 }
 #titulo{
         display: flex;
@@ -272,7 +271,7 @@ position: absolute;
         width: 100%;
         height:500px;
         background-color: aquamarine;
-position: relative;
+        position: relative;
         align-self: center;
         z-index: -1;
 }
@@ -292,7 +291,7 @@ position: relative;
         height: 500px;
         z-index:-1;
         position: absolute;
-        animation: animacion2 2s  infinite;
+        animation: animacion2 5s  infinite;
 }
 #presentacion #imagenes{
         align-self: center;
@@ -308,7 +307,7 @@ position: relative;
         height: 500px;
         z-index:-1;
         position: absolute;
-        animation: animacion 2s  infinite;
+        animation: animacion 5s  infinite;
 }
 #presentacion #imagenes2{
         align-self: center;
